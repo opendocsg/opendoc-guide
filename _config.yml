@@ -15,5 +15,5 @@ server_LOCAL: http://127.0.0.1:3000
 server_DEV: https://opendoc.sg
 styling_options:
   primary_brand_color: '#444'
-  logo_path: /assets/logo.png
+  logo_path: /assets/logo-full.png
 

@@ -1,10 +1,10 @@
-title: Community Legal Clinic Manual, Law Society of Singapore
+title: Opendoc - Getting started
 remote_theme: opengovsg/opendoc-theme
 plugins:
   - jekyll-seo-tag
   - jekyll-coffeescript
 section_order:
-  - Chapter 1
+  - Getting Started
   - Chapter 2
 elastic_search:
   index: templateindex

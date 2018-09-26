@@ -4,8 +4,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-coffeescript
 section_order:
+  - Introduction
   - Getting Started
-  - Chapter 2
 elastic_search:
   index: intro_index
   doctype: bare

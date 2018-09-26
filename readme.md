@@ -33,5 +33,4 @@ On GitHub repo page - Settings - Scroll down to GitHub Pages - Select the branch
 
 On GitHub repo page - Settings - WebHooks on the left nav bar - Add webhook
 
-
 # IV. Copy your markdown documents into your local repo, edit the _config.yml, then push it 

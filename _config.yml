@@ -1,8 +1,5 @@
-title: Opendoc - Getting started
+title: Opendoc Documentation
 remote_theme: opengovsg/opendoc-theme
-plugins:
-  - jekyll-seo-tag
-  - jekyll-coffeescript
 section_order:
   - Introduction
   - Getting Started

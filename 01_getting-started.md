@@ -54,3 +54,4 @@ The config file is located in the base path of your directory ("_config.yml"). T
 	git commit -m <commit message>
 	git push origin master
 	```
+	

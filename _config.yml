@@ -2,7 +2,8 @@ title: Opendoc Documentation
 remote_theme: opengovsg/opendoc-theme
 section_order:
   - Introduction
-  - Getting Started
+  - Getting started
+  # - Import your files
 elastic_search:
   index: intro_index
   doctype: bare

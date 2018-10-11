@@ -25,8 +25,6 @@ Opendoc is essentially a static site with no backend integration at all. You no 
 
 Github is a popular "Version Control System" used by engineers around the world to manage large scale projects. Github pages is a feature provided by Github that allows users to create static websites without having to set up any servers.
 
-![alt text](https://raw.githubusercontent.com/github/explore/95db15839d9d404742e1dc3aebc83bc8ea42eb24/collections/github-pages-examples/github-pages-examples.png | width=100)
-
 **Markdown formatting**
 
 All documents on OpenDoc are stored in a non-proprietary format called Markdown. 

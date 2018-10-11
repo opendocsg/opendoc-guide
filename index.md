@@ -39,4 +39,6 @@ For OpenDoc, we are making use of the "insert-markdown-flavour-name" flavour, pl
 
 ## References
 
+[OpenDoc](https://opendoc.sg)
+[Github](https://github.com/)
 [Markdown CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

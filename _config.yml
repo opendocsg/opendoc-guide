@@ -4,12 +4,8 @@ section_order:
   - Introduction
   - Getting started
   # - Import your files
-elastic_search:
-  index: intro_index
-  doctype: bare
-environment: DEV
 google_analytics: UA-113717369-7
-server_LOCAL: https://search.opendoc.sg
+server_PROD: https://search.opendoc.sg
 server_DEV: https://search.opendoc.sg
 styling_options:
   primary_brand_color: '#003c98'

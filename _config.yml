@@ -1,5 +1,5 @@
 title: Opendoc Documentation
-remote_theme: opengovsg/opendoc-theme
+remote_theme: opendocsg/opendoc-theme
 section_order:
   - Introduction
   - Getting started

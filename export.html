@@ -1,0 +1,157 @@
+<!-- layout for print export.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+  </head>
+
+  <body class="print-content">
+    <section class="description">
+      <img class="description-logo" src="./assets/logo-full.png">
+      <div class="description-title">Opendoc Guide</div>
+    </section>
+
+    <div class="site-main" aria-label="Content" >
+      
+<h1 id="getting-started">Getting started</h1>
+
+<p><a href="https://github.com">Github</a> is an online service that helps people collaborate on large projects remotely. Along with Github, we’ll be using another feature called Github Pages to store and serve the generated documents to the public. More on this feature can be found <a href="https://pages.github.com/">here</a>.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>Basic understanding of the command line</li>
+  <li>Local machine with Git installed</li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+
+<p><strong>Step 1:</strong></p>
+
+<p>If you <strong>do not</strong> have a Github account, follow the steps <a href="https://github.com/">here</a> to get one created.</p>
+
+<p>If you <strong>already have an</strong> account on Github account, create a new repository and name it in the following convention:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opendoc-&lt;name_of_document&gt; e.g. opendoc-example-doc
+</code></pre></div></div>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Navigate into the working directory and clone the template repo onto your local machine</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd &lt;directory_path&gt;
+git clone git@github.com:opengovsg/opendoc-template.git
+</code></pre></div></div>
+
+<p><strong>Step 3:</strong></p>
+
+<p>Rename the folder to match the name of the repository that was created, and update the remote address for the repo on your local machine. This allows you to make changes to the online repository that was created.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv opendoc-template opendoc-&lt;name_of_document&gt;
+cd opendoc-&lt;name_of_document&gt;
+git remote set-url origin git@github.com:opengovsg/opendoc-&lt;name_of_document&gt;.git
+</code></pre></div></div>
+
+<p><strong>Step 4:</strong></p>
+
+<p>Update the following configuration fields in the _condig.yml file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- title                           &lt;------- Change
+- elastic_search 
+	- index                   &lt;------- Change
+- styling_options
+	- primary_brand_color     &lt;------- Change
+	- logo_path               &lt;------- Change
+</code></pre></div></div>
+
+<p>Definitions:</p>
+
+<ul>
+  <li>title: Name of document</li>
+  <li>elastic_search -&gt; index: Name of index that the documents will be searched against</li>
+  <li>primary_brand_colour: Primary brand color of Ministry/Agency publishing the document</li>
+  <li>logo_path: Path to logo file in this directory</li>
+</ul>
+
+<p><strong>Step 5:</strong></p>
+
+<p>Copy the markdown documents into the root directory of the repo. The documents have to be in the markdown (.md) format, and you can find out more about getting the documents converted in the following section.</p>
+
+<p><strong>Step 6:</strong></p>
+
+<p>Commit your changes, and update the online repository with the new version</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m &lt;"commit_message"&gt;
+git push origin master
+</code></pre></div></div>
+
+<h2 id="configuring-github-pages">Configuring Github Pages</h2>
+
+<p>Follow these instructions on “Enabling Github Pages to publish your site from master or gh-pages”</p>
+
+<p>Link <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">here</a></p>
+
+<h1 id="import-your-files">Import your files</h1>
+
+<p>Documents need to be converted into markdown for it to make use of OpenDoc.</p>
+
+<h1 id="introduction">Introduction</h1>
+<p>OpenDoc is a simple and easy way to make documents easily searchable and available to the public. You can modify, track changes and submit edit requests easily on the platform. This can be done through the web interface or locally on your computer.</p>
+
+<h2 id="features">Features</h2>
+
+<p><strong>Mobile responsive</strong></p>
+
+<p>All documents that are shared on the site will be mobile responsive by default! We take care of the design so that you can focus on the content!</p>
+
+<p><strong>Elastic Search</strong></p>
+
+<p>You’re no longer bounded by exact keyword search. Make use of elasticsearch to search through your documents quickly and accurately.</p>
+
+<p><strong>Speedy surfing</strong></p>
+
+<p>Opendoc is essentially a static site with no backend integration at all. You no longer have to wait minutes for a site to get loaded, and all sites get loaded in milliseconds!</p>
+
+<h2 id="important-concepts">Important concepts</h2>
+
+<p><strong>Github &amp; Github pages</strong></p>
+
+<p>Github is a popular “Version Control System” used by engineers around the world to manage large scale projects. Github pages is a feature provided by Github that allows users to create static websites without having to set up any servers.</p>
+
+<p><strong>Markdown formatting</strong></p>
+
+<p>All documents on OpenDoc are stored in a non-proprietary format called Markdown.</p>
+
+<p>Markdown is a simple text-based markup language and conversion tool that allows writers to create great content for the web without having to worry too much about writing code. The syntax of the language is designed to be easy to learn and intuitive.</p>
+
+<p><strong>Markdown flavours</strong></p>
+
+<p>Markdown comes in different flavours to fit the needs of each use case.</p>
+
+<p>For OpenDoc, we are making use of the “insert-markdown-flavour-name” flavour, plus some additional customised styles to simulate features found in typical document processing applications. The custom styles will be defined in this document, and will be accompanied with samples to make it easier to start your OpenDoc document.</p>
+
+<h2 id="references">References</h2>
+
+<p><a href="https://opendoc.sg">OpenDoc</a>
+<a href="https://github.com/">Github</a>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown CheatSheet</a></p>
+
+<h1 id="contribute">Contribute</h1>
+
+<p>If you would like to contribute back to the OpenDoc project, our github repository is open <a href="https://github.com/opengovsg/opendoc-theme">here</a>. Drop us a PR with a brief description of your submission, and we’ll take a look at it :).</p>
+
+<h2 id="give-us-your-feedback">Give us your feedback</h2>
+
+<p>If you have feedback on how we can improve OpenDoc, drop us an email at admin@opendoc.sg.</p>
+
+
+    </div>
+  </body>
+
+</html>
